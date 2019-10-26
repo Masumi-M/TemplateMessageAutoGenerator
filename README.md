@@ -5,7 +5,7 @@ An application that generates a template message.
 
 ## Demo
 <img src="./Demo.png" />
-URL: [template-message-generator](https://template-message-generator.herokuapp.com/)
+Link: https://template-message-generator.herokuapp.com/
 
 ## Dependency / Requirements
 ### Python
@@ -22,9 +22,9 @@ Werkzeug==0.16.0
 ```
 
 ## Setup / Usage
-Setup: `pip install -r ./requirements.txt`
-Usage: `python3 server.py`
-localhost: `http://127.0.0.1:8080/` or `http://localhost:8080/`
+Setup: `pip install -r ./requirements.txt`<br>
+Usage: `python3 server.py`<br>
+localhost: `http://127.0.0.1:8080/` or `http://localhost:8080/`<br>
 
 ## Program Flow
 ### 1. Creating Scaffold
@@ -44,6 +44,8 @@ localhost: `http://127.0.0.1:8080/` or `http://localhost:8080/`
 ## References
 - [Skeleton](http://getskeleton.com)
 
-## Addons
-- [x] saves automatically to the clipboard
+## Prospects
+- [ ] saves automatically to the clipboard
 - [ ] exchanges async
+- [ ] responsive design
+- [ ] more options for templates such as READEME.md
