@@ -1,7 +1,7 @@
 # Auto-Generator of Template Message
 =====
 ## Description
-An application that generates template message.
+An application that generates a template message.
 
 ## Demo
 --- Demo comes here ---
@@ -40,5 +40,5 @@ localhost: `http://127.0.0.1:8080/`
 - [Skeleton](http://getskeleton.com)
 
 ## Addons
-- [x] saves automatically to clipboard
-- [ ] exchanges asyncly
+- [x] saves automatically to the clipboard
+- [ ] exchanges async
