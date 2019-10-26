@@ -22,11 +22,16 @@
                 </div>
             </div>
             <label for="description_input">Description</label>
-            <textarea class="u-full-width" placeholder="Time: 9~10 AM" id="description_input"
-                name="description_input"></textarea>
+            <textarea class="u-full-width" placeholder="Time: 9~10 AM
+Place: Meeting Room 6" id="description_input" name="description_input"></textarea>
 
             <input class="button-primary" type="submit" value="Generate">
         </form>
+        <textarea id="result_output">
+# {{messageFile["title"]}}
+=====
+{{messageFile["desc"]}}</textarea>
+        <button class="button-secondary" id="copy_button">Copy to Clipboard</button>
 
     </div>
 </body>

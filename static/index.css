@@ -1,3 +1,8 @@
-h1 {
-    /* color: red; */
+#description_input {
+    height: 15rem;
+}
+
+#result_output {
+    height: 15rem;
+    width: 100%;
 }

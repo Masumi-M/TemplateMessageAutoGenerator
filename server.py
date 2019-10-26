@@ -22,6 +22,7 @@ def exchangeMessage():
         print(request.form['description_input'])
         _messageFile = {"title": str(
             request.form['title_input']), "desc": str(request.form['description_input'])}
+        print(_messageFile)
 
     return render_template("index.html", title=_title, messageFile=_messageFile)
 
