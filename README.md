@@ -10,8 +10,7 @@ URL: []template-message-generator]()
 
 ## Dependency / Requirements
 ### Python
-- `v3`
-- dev: `v3.7.3`
+- `v3.7.3`
 
 ### Library
 ```
@@ -26,7 +25,7 @@ Werkzeug==0.16.0
 ## Setup / Usage
 Setup: `pip install -r ./requirements.txt`
 Usage: `python3 server.py`
-localhost: `http://127.0.0.1:8080/`
+localhost: `http://127.0.0.1:8080/` or `http://localhost:8080/`
 
 ## Program Flow
 ### 1. Creating Scaffold

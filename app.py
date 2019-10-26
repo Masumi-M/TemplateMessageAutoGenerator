@@ -6,10 +6,10 @@ app = Flask(__name__)
 @app.route('/')
 def index():
     _title = "Auto-Generator of Template Message"
-    _messageFile = {"title": "sample_title_init", "desc": "sample_desc_init"}
+    _messageFile = {"title": "Title", "desc": "Description"}
     return render_template('index.html', title=_title, messageFile=_messageFile)
 
-# # testというリクエスト受けた時に、実行する関数
+# # exchangeMessageというリクエスト受けた時に、実行する関数
 @app.route('/exchangeMessage', methods=['GET', 'POST'])
 def exchangeMessage():
     _title = "Auto-Generator of Template Message"
