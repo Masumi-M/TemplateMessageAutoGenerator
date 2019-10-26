@@ -1,17 +1,5 @@
 # Auto-Generator of Template Message
 =====
-- mat2csv app
-- image show app
-    - can preview in browser
-- data graph app
-- icon generator app
-    - without edge 
-    - with circle line
-- template contact message app
-    - can use when making contact message
-- some sort of AI app
-- auto markdown app
-
 ## Description
 An application that generates template message.
 
@@ -20,17 +8,17 @@ An application that generates template message.
 
 ## Dependency / Requirements
 ### Python
-`v3`
+- `v3`
+- dev: `v3.7.3`
 
 ### Library
 ```
-
+Flask==1.0.3
 ```
 
 ## Setup / Usage
 Setup: `pip install -r ./requirements.txt`
 Usage: `python3 server.py`
-
 localhost: `http://127.0.0.1:8080/`
 
 ## Program Flow
@@ -43,12 +31,14 @@ localhost: `http://127.0.0.1:8080/`
 ### 3. Create the Output
 
 ### 4. Fix Design
+- using [Skeleton](http://getskeleton.com) 
 
-## Authors
+## Author
 - [Masumi Morishige](https://github.com/Masumi-M)
 
 ## References
+- [Skeleton](http://getskeleton.com)
 
 ## Addons
-- saves automatically to clipboard
-- exchanges asyncly
+- [x] saves automatically to clipboard
+- [ ] exchanges asyncly

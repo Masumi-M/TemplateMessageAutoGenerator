@@ -1,3 +1,7 @@
+#main_container {
+    margin: 2rem 3rem
+}
+
 #description_input {
     height: 15rem;
 }
