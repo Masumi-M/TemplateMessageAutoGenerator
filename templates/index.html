@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <title> {{ title }} </title>
+    <link rel="stylesheet" href="{{url_for('static', filename='index.css')}}">
+    <script src="{{url_for('static', filename='index.js')}}"></script>
+</head>
+
+<body>
+    <h1> {{title}}</h1>
+    <div>
+        <p>{{"title: %s, desc: %s" %(json["title"], json["desc"])}}</p>
+    </div>
+
+    <div>
+        <form action="/exchangeData" method="get">
+            <button name="get_value" value="GetValue">GET submit</button>
+        </form>
+
+        <form action="/exchangeData" method="post">
+            <button name="post_value" value="PostValue">POST submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
