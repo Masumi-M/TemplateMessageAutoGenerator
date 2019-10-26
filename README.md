@@ -6,6 +6,8 @@ An application that generates a template message.
 ## Demo
 --- Demo comes here ---
 
+URL: []template-message-generator]()
+
 ## Dependency / Requirements
 ### Python
 - `v3`
@@ -13,7 +15,12 @@ An application that generates a template message.
 
 ### Library
 ```
-Flask==1.0.3
+Click==7.0
+Flask==1.1.1
+itsdangerous==1.1.0
+Jinja2==2.10.3
+MarkupSafe==1.1.1
+Werkzeug==0.16.0
 ```
 
 ## Setup / Usage
