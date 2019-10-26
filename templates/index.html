@@ -3,24 +3,31 @@
 
 <head>
     <title> {{ title }} </title>
+    <link rel="stylesheet" href="{{url_for('static', filename='normalize.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='skeleton.css')}}">
     <link rel="stylesheet" href="{{url_for('static', filename='index.css')}}">
     <script src="{{url_for('static', filename='index.js')}}"></script>
 </head>
 
 <body>
-    <h1> {{title}}</h1>
-    <div>
-        <p>{{"title: %s, desc: %s" %(json["title"], json["desc"])}}</p>
-    </div>
+    <div style="margin: 2rem 3rem">
+        <h1> {{title}}</h1>
 
-    <div>
-        <form action="/exchangeData" method="get">
-            <button name="get_value" value="GetValue">GET submit</button>
+        <form action="/exchangeMessage" method="POST">
+            <div class="row">
+                <div class="six columns">
+                    <label for="title_input">Title</label>
+                    <input class="u-full-width" type="text" placeholder="Meeting on 20th July" id="title_input"
+                        name="title_input">
+                </div>
+            </div>
+            <label for="description_input">Description</label>
+            <textarea class="u-full-width" placeholder="Time: 9~10 AM" id="description_input"
+                name="description_input"></textarea>
+
+            <input class="button-primary" type="submit" value="Generate">
         </form>
 
-        <form action="/exchangeData" method="post">
-            <button name="post_value" value="PostValue">POST submit</button>
-        </form>
     </div>
 </body>
 

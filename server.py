@@ -5,20 +5,25 @@ app = Flask(__name__)
 # # ルートにおいて、index.htmlをレンダリングさせる
 @app.route('/')
 def index():
-    title = "Auto-Generator of Template Message"
-    jsonFile = {"title": "sample_title", "desc": "sample_desc"}
-    return render_template('index.html', title=title, json=jsonFile)
+    _title = "Auto-Generator of Template Message"
+    _messageFile = {"title": "sample_title_init", "desc": "sample_desc_init"}
+    return render_template('index.html', title=_title, messageFile=_messageFile)
 
 # # testというリクエスト受けた時に、実行する関数
-@app.route('/exchangeData', methods=['GET', 'POST'])
-def exchangeData():
+@app.route('/exchangeMessage', methods=['GET', 'POST'])
+def exchangeMessage():
+    _title = "Auto-Generator of Template Message"
     if request.method == 'GET':
         print('GET Request')
-        res = request.args.get('get_value')
+        # res = request.args.get('title_input')
     elif request.method == 'POST':
         print('POST Request')
-        res = request.form['post_value']
-    return res
+        print(request.form['title_input'])
+        print(request.form['description_input'])
+        _messageFile = {"title": str(
+            request.form['title_input']), "desc": str(request.form['description_input'])}
+
+    return render_template("index.html", title=_title, messageFile=_messageFile)
 
 
 # # Localhostを立てるためのコマンド
