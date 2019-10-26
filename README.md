@@ -4,8 +4,7 @@
 An application that generates a template message.
 
 ## Demo
---- Demo comes here ---
-
+<img src="./Demo.png" />
 URL: [template-message-generator](https://template-message-generator.herokuapp.com/)
 
 ## Dependency / Requirements
