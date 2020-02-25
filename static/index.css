@@ -18,15 +18,15 @@
 }
 
 @media(max-width:750px) {
-    * {
-        font-size: 2rem;
+    #main_container {
+        margin: 3rem 2rem;
     }
+}
 
-    h1 {
-        font-size: 4rem;
-    }
+@media(max-width:300px) {
 
-    #copyright_text {
-        font-size: 1.5rem;
+    button,
+    #generate_button {
+        width: 100%;
     }
 }
