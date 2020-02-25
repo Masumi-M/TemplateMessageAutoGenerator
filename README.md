@@ -1,7 +1,8 @@
 # Auto-Generator of Template Message
 =====
 ## Description
-An application that generates a template message.
+This application generates a template message.
+I made this in a "1-hour hackathon (using Flask or Django)".
 
 ## Demo
 <img src="./Demo.png" />
