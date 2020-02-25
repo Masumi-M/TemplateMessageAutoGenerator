@@ -23,7 +23,7 @@ Werkzeug==0.16.0
 
 ## Setup / Usage
 Setup: `pip install -r ./requirements.txt`<br>
-Usage: `python3 server.py`<br>
+Usage: `python3 app.py`<br>
 localhost: `http://127.0.0.1:8080/` or `http://localhost:8080/`<br>
 
 ## Program Flow
